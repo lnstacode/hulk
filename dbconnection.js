@@ -3,7 +3,7 @@ var connection=mysql.createPool({
 
 host:'localhost',
 user:'root',
-password:'Hello123!',
+password:'sandy76#',
 database:'demo',
 
 });

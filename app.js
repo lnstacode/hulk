@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.static('/uploads/'));
 
 /*app.use('/resources',express.static(__dirname + '/images'));
-So now, you can use http://localhost:5000/resources/myImage.jpg to serve all the images instead of http://localhost:5000/images/myImage.jpg. */
+So now, you can use http://localhost:3000/resources/myImage.jpg to serve all the images instead of http://localhost:3000/images/myImage.jpg. */
 app.use('/', routes);
 app.use('/users',users);
 // catch 404 and forward to error handler
@@ -32,7 +32,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
 // error handlers
 
 // development error handler
